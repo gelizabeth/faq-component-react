@@ -16,7 +16,7 @@ This challenge [Frontend Mentor](https://www.frontendmentor.io) was to build out
 ## Solution
 
 The app is build with React and Sass for styles.
-[Live demo](link)
+[Live demo](https://condescending-rosalind-292664.netlify.app/)
 
 ## Instalation and use
 
