@@ -1,0 +1,82 @@
+@import './config';
+.faq-item {
+
+    font-size: 1rem;
+
+    transition: all 0.1s linear;
+    
+    // min-width: 368px;
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.144);
+    cursor: pointer;
+
+    &__question {
+        // padding:1rem 0;
+        color: hsl(237, 12%, 33%);
+        font-size: 0.875rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: color ease-in 0.2s;
+
+        &_open {
+            font-weight: 700;
+
+        }
+
+        &:hover {
+            color: hsl(14, 88%, 65%);
+        }
+
+        .arrow {
+            border-bottom: 3px solid hsl(14, 88%, 65%);
+            border-right: 3px solid hsl(14, 88%, 65%);
+            width: 5px;
+            height: 5px;
+            transition: transform ease-in 0.5s;
+            transform: rotate(45deg);
+            
+            &_down {
+                transform: rotate(225deg);
+            }
+        }
+    }
+
+    &__answer {
+        visibility: collapse;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        // display: none;
+        height: 0;
+        opacity: 0;
+        color: #fff;
+        padding: 0;
+
+        // transition: padding 0.3s linear;
+        transition: all 0.3s linear;
+
+        &_open {
+            color: hsl(240, 6%, 50%);
+            // display: inline-block;
+            visibility: visible;
+            height: 2.5rem;
+            width: 100%;
+            padding: 0rem 0 1rem;
+
+            opacity: 1;
+            // transition:  all 0.3s linear;
+
+        }
+    }
+
+
+
+}
+@include media-lg{
+    .faq-item{
+        width: 80%;
+    }
+}
